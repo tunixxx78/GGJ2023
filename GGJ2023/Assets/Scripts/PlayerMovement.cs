@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] Animator plrAnimator;
 
+    SfxManager sfx;
+
     //for re-spawn
     public static Vector3 currentcheckPoint = Vector3.zero;
 
@@ -23,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         currentcheckPoint = this.transform.position;
         canFly = false;
         plrAnimator = GetComponentInChildren<Animator>();
+        sfx = FindObjectOfType<SfxManager>();
     }
 
     private void Update()
@@ -44,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
             float x = Input.GetAxisRaw("Horizontal");
             float moveBy = x * moveSpeed;
             plrRB.velocity = new Vector2(moveBy, plrRB.velocity.y);
+            plrAnimator.SetBool("Isrunning", true);
            
         }
         else
@@ -51,7 +55,8 @@ public class PlayerMovement : MonoBehaviour
             float x = Input.GetAxisRaw("Horizontal");
             float moveBy = x * (moveSpeed / 2);
             plrRB.velocity = new Vector2(moveBy, plrRB.velocity.y);
-            
+            plrAnimator.SetBool("Isrunning", false);
+
         }
 
         if (Input.GetAxis("Horizontal") < 0)
@@ -70,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             plrAnimator.SetTrigger("IsJumping");
+            sfx.jumpAudio();
             plrRB.velocity = new Vector2(plrRB.velocity.x, jumpForce);
 
             StartCoroutine(ChangePlatform(platformSwitchDelay));
@@ -143,6 +149,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.CompareTag("Obstacle"))
         {
+            sfx.hitAudio();
             StartCoroutine(ReSpawnPlr(reSpawnDelay));
         }
         if (collision.CompareTag("EndLine"))
