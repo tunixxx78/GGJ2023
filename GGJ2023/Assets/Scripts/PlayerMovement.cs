@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             float x = Input.GetAxisRaw("Horizontal");
-            float moveBy = x * (moveSpeed / 4);
+            float moveBy = x * (moveSpeed / 2);
             plrRB.velocity = new Vector2(moveBy, plrRB.velocity.y);
             
         }
