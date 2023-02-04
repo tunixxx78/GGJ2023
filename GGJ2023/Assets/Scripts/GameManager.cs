@@ -11,14 +11,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject gameoverCanvas;
     bool isTimerOn;
 
-    [SerializeField] GrowingRoots growingRoots;
+    //[SerializeField] GrowingRoots growingRoots;
 
     private void Awake()
     {
         Time.timeScale = 1;
         currentGrowth = 0;
-        growingRoots.SetMinGrowth(currentGrowth);
-        growingRoots.SetMaxGrowth(timeForGrowth);
+        //growingRoots.SetMinGrowth(currentGrowth);
+        //growingRoots.SetMaxGrowth(timeForGrowth);
         timeForLevel = timeForGrowth;
         isTimerOn = true;
     }
@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         {
             timeForLevel -= Time.deltaTime;
             currentGrowth += Time.deltaTime;
-            growingRoots.SetGrowth(currentGrowth);
+            //growingRoots.SetGrowth(currentGrowth);
 
             if(timeForLevel <= 0)
             {

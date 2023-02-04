@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask groundLayer;
     [SerializeField] float checkGroundRadius;
     [SerializeField] Transform isGroundedChecker;
-    [SerializeField] GameObject jumpOne, jumpZero, victoryCanvas;
+    //[SerializeField] GameObject jumpOne, jumpZero, victoryCanvas;
+    [SerializeField] GameObject victoryCanvas;
 
     [SerializeField] Animator plrAnimator;
 
@@ -47,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
             float x = Input.GetAxisRaw("Horizontal");
             float moveBy = x * moveSpeed;
             plrRB.velocity = new Vector2(moveBy, plrRB.velocity.y);
-            plrAnimator.SetBool("Isrunning", true);
+            
            
         }
         else
@@ -55,17 +56,19 @@ public class PlayerMovement : MonoBehaviour
             float x = Input.GetAxisRaw("Horizontal");
             float moveBy = x * (moveSpeed / 2);
             plrRB.velocity = new Vector2(moveBy, plrRB.velocity.y);
-            plrAnimator.SetBool("Isrunning", false);
+            plrAnimator.SetBool("IsRunning", false);
 
         }
 
         if (Input.GetAxis("Horizontal") < 0)
         {
             this.transform.localScale = new Vector3(-1, 1, 1);
+            plrAnimator.SetBool("IsRunning", true);
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
             this.transform.localScale = new Vector3(1, 1, 1);
+            plrAnimator.SetBool("IsRunning", true);
         }
         
 
@@ -78,14 +81,14 @@ public class PlayerMovement : MonoBehaviour
             sfx.jumpAudio();
             plrRB.velocity = new Vector2(plrRB.velocity.x, jumpForce);
 
-            StartCoroutine(ChangePlatform(platformSwitchDelay));
+            //StartCoroutine(ChangePlatform(platformSwitchDelay));
 
             StartCoroutine(DropRocks(delayForRocks));
         }
         
         CheckIfGrounded();
     }
-
+    /*
     IEnumerator ChangePlatform(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -101,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
             jumpOne.SetActive(false);
         }
     }
-
+    */
     private void CheckIfGrounded()
     {
         Collider2D colliders = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
@@ -121,6 +124,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(collision.collider.tag == "Obstacle")
         {
+            sfx.hitAudio();
             StartCoroutine(ReSpawnPlr(reSpawnDelay));
         }
         if(collision.collider.tag == "MovingPlatform")
