@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Transform isGroundedChecker;
     [SerializeField] GameObject jumpOne, jumpZero, victoryCanvas;
 
+    [SerializeField] Animator plrAnimator;
+
     //for re-spawn
     public static Vector3 currentcheckPoint = Vector3.zero;
 
@@ -20,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         plrRB = GetComponent<Rigidbody2D>();
         currentcheckPoint = this.transform.position;
         canFly = false;
+        plrAnimator = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -41,19 +44,32 @@ public class PlayerMovement : MonoBehaviour
             float x = Input.GetAxisRaw("Horizontal");
             float moveBy = x * moveSpeed;
             plrRB.velocity = new Vector2(moveBy, plrRB.velocity.y);
+           
         }
         else
         {
             float x = Input.GetAxisRaw("Horizontal");
             float moveBy = x * (moveSpeed / 4);
             plrRB.velocity = new Vector2(moveBy, plrRB.velocity.y);
+            
+        }
+
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            this.transform.localScale = new Vector3(-1, 1, 1);
+        }
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            this.transform.localScale = new Vector3(1, 1, 1);
         }
         
+
     }
     private void Jump()
     {
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            plrAnimator.SetTrigger("IsJumping");
             plrRB.velocity = new Vector2(plrRB.velocity.x, jumpForce);
 
             StartCoroutine(ChangePlatform(platformSwitchDelay));
