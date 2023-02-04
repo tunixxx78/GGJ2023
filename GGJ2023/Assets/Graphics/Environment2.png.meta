@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,7 +126,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: UG_Ground
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3085
+        width: 1472
+        height: 946
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d593169cf599af243a6dec09c5ff1d9b
+      internalID: 983550453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UG_Rock2
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1871
+        width: 2330
+        height: 1518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc5a2a9224d5424bb571cac91fc6c69
+      internalID: -948332199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UG_Rock1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1849
+        width: 1351
+        height: 1018
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd862757da49614fa3003ac6250828b
+      internalID: 211823598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UG_RockSmall1
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 135
+        width: 638
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a84446760112641b805d45ffb67391
+      internalID: -1679056826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UG_Rock3
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 789
+        width: 1666
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72feb4d90b8e79847a76307365e75588
+      internalID: -1719704290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UG_RockSmall2
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 95
+        width: 884
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1e53998f31a834e99f0ea89a6c4663
+      internalID: -108221514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeStump
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 95
+        width: 1315
+        height: 1706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b697747073d58414ab8e451c41453b0f
+      internalID: 59938638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -137,7 +284,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UG_Ground: 983550453
+      UG_RockSmall2: -108221514
+      UG_Rock1: 211823598
+      TreeStump: 59938638
+      UG_Rock3: -1719704290
+      UG_RockSmall1: -1679056826
+      UG_Rock2: -948332199
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

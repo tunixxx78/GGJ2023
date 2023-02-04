@@ -382,7 +382,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1567
         y: 2483
-        width: 351
+        width: 171
         height: 220
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -528,7 +528,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2012
-        y: 1463
+        y: 1465
         width: 590
         height: 526
       alignment: 0
@@ -649,6 +649,279 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: L
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 546
+        width: 268
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69df8538dd6c9dc4a9339fe22520b16b
+      internalID: -1342342005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 542
+        width: 194
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e502dadf6d8a2074f80614c2172ced29
+      internalID: 1263070754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch_R
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 549
+        width: 259
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60620818617bc814d8915a16e1e989e6
+      internalID: -832502033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leaf1
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 1761
+        width: 170
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635c4367b1350f14bb90d056e32abbd7
+      internalID: 203219116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leaves2
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1798
+        width: 242
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7366d101f7c736e49a862924d67f41af
+      internalID: 687256644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Platform1
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 2020
+        width: 432
+        height: 419
+      alignment: 9
+      pivot: {x: 0.40529123, y: 0.9075686}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64d6722ccfe41949bcae80c4a38825a
+      internalID: 1809027650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindPart1
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 982
+        width: 140
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9997d2d7dffd0ba40b05c64de53922fc
+      internalID: -219359594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindPart2
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 980
+        width: 143
+        height: 309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e338e83f7ac74ae4ea3aeacb19510878
+      internalID: -63683242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindPart3
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 980
+        width: 135
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0cf0b2d014b8d41bf107e781812d18
+      internalID: -2036469167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindPart4
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 977
+        width: 123
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547648b878b522947ae4c6f52341468f
+      internalID: 1329939687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindPart5
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 971
+        width: 199
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3baf037d1a2c4f4887107492f987cde
+      internalID: 1123635252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundBlock8
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1318
+        width: 775
+        height: 479
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deedbbda12ccace40afe5df4251b715b
+      internalID: -1772847782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass2
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 2475
+        width: 205
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60734a1407c11c74f899834e3b84d443
+      internalID: -131290202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -663,6 +936,7 @@ TextureImporter:
       Environment_55: -1532969944
       Rock2: 1412802227
       Rock3: 2057120467
+      Environment_10: -181529447
       Environment_12: -1623325702
       Tree: -673400509
       Environment_27: 619506146
@@ -670,9 +944,13 @@ TextureImporter:
       Environment_32: -1396773473
       Rock8: -1313256131
       Spikes2: 1241505772
+      WindPart1: -219359594
+      Leaf1: 203219116
       Environment_46: -1324795963
       GroundBlock4: -1703760454
+      L: -1342342005
       Environment_45: -116058280
+      Grass2: -131290202
       GroundBlock7: 411357740
       Environment_34: 47651969
       Environment_20: 727569997
@@ -687,8 +965,10 @@ TextureImporter:
       Environment_52: 1599908419
       Rock5: 910787918
       GroundBlock5: 758548410
+      Switch_R: -832502033
       GroundBlockSmall1: 417565772
       Environment_35: -901004742
+      Switch: 1263070754
       Environment_39: 1003329071
       Environment_33: -1826558641
       Environment_42: 52998477
@@ -696,6 +976,7 @@ TextureImporter:
       Rock7: 775631972
       Bridge2: 1654742550
       GroundBlock6: -143267980
+      GroundBlock8: -1772847782
       Environment_6: 1563153379
       GroundBlock1: -1194669500
       Environment_36: -83147235
@@ -714,13 +995,18 @@ TextureImporter:
       Environment_29: 438939435
       BigGround: 1029899399
       Environment_11: -2114735020
+      WindPart2: -63683242
       Rock6: -1611177800
+      Leaves2: 687256644
+      Platform1: 1809027650
+      WindPart5: 1123635252
       Environment_18: 1215492858
       Environment_53: -276140480
+      WindPart4: 1329939687
+      WindPart3: -2036469167
       GroundBlock2: 750102396
-      Spikes1: -1543276114
       Environment_58: 1275231962
-      Environment_10: -181529447
+      Spikes1: -1543276114
       Environment_49: -302586188
   spritePackingTag: 
   pSDRemoveMatte: 0
