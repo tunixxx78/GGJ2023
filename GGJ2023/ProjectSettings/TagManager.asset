@@ -9,6 +9,7 @@ TagManager:
   - CheckPoint
   - MovingPlatform
   - EndLine
+  - Upstream
   layers:
   - Default
   - TransparentFX
