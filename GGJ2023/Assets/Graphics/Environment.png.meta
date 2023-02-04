@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -668,7 +668,6 @@ TextureImporter:
       Environment_27: 619506146
       Environment_51: 2006097197
       Environment_32: -1396773473
-      GroundBlock2: 750102396
       Rock8: -1313256131
       Spikes2: 1241505772
       Environment_46: -1324795963
@@ -718,6 +717,7 @@ TextureImporter:
       Rock6: -1611177800
       Environment_18: 1215492858
       Environment_53: -276140480
+      GroundBlock2: 750102396
       Spikes1: -1543276114
       Environment_58: 1275231962
       Environment_10: -181529447

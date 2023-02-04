@@ -24,7 +24,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Background
   - 
   - 
   - 
@@ -44,4 +44,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3465453713
+    locked: 0
+  - name: Ground Back
+    uniqueID: 3474744697
+    locked: 0
+  - name: Ground
+    uniqueID: 3335425689
+    locked: 0
+  - name: Ground Front
+    uniqueID: 2950168869
+    locked: 0
+  - name: Moving blocks
+    uniqueID: 3599806301
+    locked: 0
+  - name: Character
+    uniqueID: 1703148803
+    locked: 0
+  - name: Foreground
+    uniqueID: 697047875
     locked: 0
