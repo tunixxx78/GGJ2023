@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D plrRB;
-    bool isGrounded = false;
-    [SerializeField] float moveSpeed, jumpForce, platformSwitchDelay, reSpawnDelay;
+    bool isGrounded = false, canFly;
+    [SerializeField] float moveSpeed, jumpForce, flySpeed, platformSwitchDelay, reSpawnDelay, delayForRocks;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] float checkGroundRadius;
     [SerializeField] Transform isGroundedChecker;
@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         plrRB = GetComponent<Rigidbody2D>();
         currentcheckPoint = this.transform.position;
+        canFly = false;
     }
 
     private void Update()
@@ -26,6 +27,11 @@ public class PlayerMovement : MonoBehaviour
         Move();
         Jump();
         CheckIfGrounded();
+
+        if(canFly)
+        {
+            plrRB.AddForce(Vector2.up * flySpeed * Time.deltaTime, ForceMode2D.Impulse);
+        }
     }
 
     private void Move()
@@ -34,6 +40,12 @@ public class PlayerMovement : MonoBehaviour
         {
             float x = Input.GetAxisRaw("Horizontal");
             float moveBy = x * moveSpeed;
+            plrRB.velocity = new Vector2(moveBy, plrRB.velocity.y);
+        }
+        else
+        {
+            float x = Input.GetAxisRaw("Horizontal");
+            float moveBy = x * (moveSpeed / 4);
             plrRB.velocity = new Vector2(moveBy, plrRB.velocity.y);
         }
         
@@ -45,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
             plrRB.velocity = new Vector2(plrRB.velocity.x, jumpForce);
 
             StartCoroutine(ChangePlatform(platformSwitchDelay));
+
+            StartCoroutine(DropRocks(delayForRocks));
         }
         
         CheckIfGrounded();
@@ -82,11 +96,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "Ground")
-        {
-            var spawner = FindObjectOfType<ObjectSpawner>();
-            spawner.SpawnObjects();
-        }
+
         if(collision.collider.tag == "Obstacle")
         {
             StartCoroutine(ReSpawnPlr(reSpawnDelay));
@@ -121,8 +131,17 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.CompareTag("EndLine"))
         {
+            GetComponent<SpriteRenderer>().enabled = false;
             Time.timeScale = 0;
             victoryCanvas.SetActive(true);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Upstream"))
+        {
+            canFly = true;
         }
     }
 
@@ -133,4 +152,11 @@ public class PlayerMovement : MonoBehaviour
         this.transform.position = currentcheckPoint;
     }
 
+    IEnumerator DropRocks(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        var spawner = FindObjectOfType<ObjectSpawner>();
+        spawner.SpawnObjects();
+    }
 }
