@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask groundLayer;
     [SerializeField] float checkGroundRadius;
     [SerializeField] Transform isGroundedChecker;
-    [SerializeField] GameObject jumpOne, jumpZero;
+    [SerializeField] GameObject jumpOne, jumpZero, victoryCanvas;
 
     //for re-spawn
     public static Vector3 currentcheckPoint = Vector3.zero;
@@ -118,6 +118,11 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("Obstacle"))
         {
             StartCoroutine(ReSpawnPlr(reSpawnDelay));
+        }
+        if (collision.CompareTag("EndLine"))
+        {
+            Time.timeScale = 0;
+            victoryCanvas.SetActive(true);
         }
     }
 

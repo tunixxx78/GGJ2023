@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - CheckPoint
   - MovingPlatform
+  - EndLine
   layers:
   - Default
   - TransparentFX

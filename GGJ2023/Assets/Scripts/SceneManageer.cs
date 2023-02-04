@@ -11,4 +11,9 @@ public class SceneManageer : MonoBehaviour
     {
         SceneManager.LoadScene(targetLevelIndex);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
