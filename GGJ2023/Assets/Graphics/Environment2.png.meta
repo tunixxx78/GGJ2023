@@ -283,7 +283,7 @@ TextureImporter:
         width: 234
         height: 308
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,7 +304,7 @@ TextureImporter:
         width: 235
         height: 310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,7 +325,7 @@ TextureImporter:
         width: 235
         height: 310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,7 +346,7 @@ TextureImporter:
         width: 228
         height: 306
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,7 +367,7 @@ TextureImporter:
         width: 222
         height: 308
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,7 +388,7 @@ TextureImporter:
         width: 230
         height: 308
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -396,6 +396,27 @@ TextureImporter:
       bones: []
       spriteID: 240d85c0133ce48a493c13c7ab91fa02
       internalID: 80958981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment2_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 514
+        width: 870
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0797ecd95b51843fe9eece59a905ecb5
+      internalID: 47628233
       vertices: []
       indices: 
       edges: []
@@ -414,6 +435,7 @@ TextureImporter:
       UG_Ground: 983550453
       Environment2_5: 80958981
       UG_RockSmall2: -108221514
+      Environment2_6: 47628233
       UG_Rock1: 211823598
       Environment2_0: -260582383
       TreeStump: 59938638
