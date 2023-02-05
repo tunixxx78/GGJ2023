@@ -571,7 +571,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Small Adventure
+  m_text: One tree at a time
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e7140d4c87a1de4482f76029df5e1eb, type: 2}
   m_sharedMaterial: {fileID: -8694476219104570536, guid: 7e7140d4c87a1de4482f76029df5e1eb,
@@ -1104,7 +1104,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Seedy Rootling's \n"
+  m_text: 'Back To The Roots
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e7140d4c87a1de4482f76029df5e1eb, type: 2}
   m_sharedMaterial: {fileID: -8694476219104570536, guid: 7e7140d4c87a1de4482f76029df5e1eb,
