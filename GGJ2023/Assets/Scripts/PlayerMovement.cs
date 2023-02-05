@@ -198,9 +198,16 @@ public class PlayerMovement : MonoBehaviour
             {
                 gameManager.plrLives++;
                 gameManager.ChangeRootImage();
-            }
-            
-            
+                sfx.livesAudio();
+
+                Destroy(collision.gameObject);
+            }            
+        }
+        if (collision.CompareTag("Upstream"))
+        {
+            jumpZero.SetActive(true);
+            jumpOne.SetActive(false);
+            jumpTwo.SetActive(false);
         }
     }
 
@@ -232,6 +239,7 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
+        sfx.rocksAudio();
         var spawner = FindObjectOfType<ObjectSpawner>();
         spawner.SpawnObjects();
     }

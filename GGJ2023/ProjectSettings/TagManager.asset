@@ -12,6 +12,7 @@ TagManager:
   - Upstream
   - bark
   - Health
+  - Leaver
   layers:
   - Default
   - TransparentFX
