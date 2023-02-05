@@ -653,8 +653,8 @@ TextureImporter:
       name: L
       rect:
         serializedVersion: 2
-        x: 952
-        y: 138
+        x: 958
+        y: 154
         width: 268
         height: 321
       alignment: 0
@@ -674,10 +674,10 @@ TextureImporter:
       name: Switch
       rect:
         serializedVersion: 2
-        x: 1325
-        y: 134
-        width: 216
-        height: 324
+        x: 1272
+        y: 155
+        width: 268
+        height: 321
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1003,10 +1003,10 @@ TextureImporter:
       Environment_18: 1215492858
       Environment_53: -276140480
       WindPart4: 1329939687
-      GroundBlock2: 750102396
-      Spikes1: -1543276114
-      Environment_58: 1275231962
       WindPart3: -2036469167
+      GroundBlock2: 750102396
+      Environment_58: 1275231962
+      Spikes1: -1543276114
       Environment_49: -302586188
   spritePackingTag: 
   pSDRemoveMatte: 0
