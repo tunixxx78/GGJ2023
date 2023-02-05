@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 
 public class SfxManager : MonoBehaviour
 {
-    [SerializeField] AudioSource button, jump, hit;
+    [SerializeField] AudioSource button, jump, hit, rocks, lives;
 
     public void jumpAudio()
     {
@@ -20,5 +20,14 @@ public class SfxManager : MonoBehaviour
     public void hitAudio()
     {
         hit.Play();
+    }
+
+    public void rocksAudio()
+    {
+        rocks.Play();
+    }
+    public void livesAudio()
+    {
+        lives.Play();
     }
 }
