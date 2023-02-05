@@ -136,7 +136,7 @@ TextureImporter:
         width: 1472
         height: 946
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,7 +157,7 @@ TextureImporter:
         width: 2330
         height: 1518
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
         width: 1351
         height: 1018
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +199,7 @@ TextureImporter:
         width: 638
         height: 478
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +220,7 @@ TextureImporter:
         width: 1666
         height: 876
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,7 +241,7 @@ TextureImporter:
         width: 884
         height: 560
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,7 +262,7 @@ TextureImporter:
         width: 1315
         height: 1706
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,6 +270,132 @@ TextureImporter:
       bones: []
       spriteID: b697747073d58414ab8e451c41453b0f
       internalID: 59938638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment2_0
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 3682
+        width: 234
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea8d715cb44c4475aca4e82b77b3620
+      internalID: -260582383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment2_1
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 3680
+        width: 235
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9ecf5109bee4ee8bf10551728a4c08
+      internalID: -432281180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment2_2
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 3680
+        width: 235
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2af64032c19f43e49b792690d45c70d
+      internalID: 1085223055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment2_3
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 3682
+        width: 228
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db4eb78602254b0fa70748f4409dc38
+      internalID: -473475275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment2_4
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 3678
+        width: 222
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed7f6e5911ed4408b935c86a7f16e6c
+      internalID: -1640601800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment2_5
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 3678
+        width: 230
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240d85c0133ce48a493c13c7ab91fa02
+      internalID: 80958981
       vertices: []
       indices: 
       edges: []
@@ -286,12 +412,18 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       UG_Ground: 983550453
+      Environment2_5: 80958981
       UG_RockSmall2: -108221514
       UG_Rock1: 211823598
+      Environment2_0: -260582383
       TreeStump: 59938638
       UG_Rock3: -1719704290
+      Environment2_3: -473475275
       UG_RockSmall1: -1679056826
+      Environment2_4: -1640601800
+      Environment2_2: 1085223055
       UG_Rock2: -948332199
+      Environment2_1: -432281180
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
