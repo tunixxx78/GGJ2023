@@ -653,8 +653,8 @@ TextureImporter:
       name: L
       rect:
         serializedVersion: 2
-        x: 832
-        y: 546
+        x: 952
+        y: 138
         width: 268
         height: 321
       alignment: 0
@@ -674,9 +674,9 @@ TextureImporter:
       name: Switch
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 542
-        width: 194
+        x: 1325
+        y: 134
+        width: 216
         height: 324
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -695,8 +695,8 @@ TextureImporter:
       name: Switch_R
       rect:
         serializedVersion: 2
-        x: 1334
-        y: 549
+        x: 1652
+        y: 134
         width: 259
         height: 303
       alignment: 0
@@ -970,8 +970,8 @@ TextureImporter:
       Environment_35: -901004742
       Switch: 1263070754
       Environment_39: 1003329071
-      Environment_33: -1826558641
       Environment_42: 52998477
+      Environment_33: -1826558641
       Environment_26: -459829556
       Rock7: 775631972
       Bridge2: 1654742550
@@ -1003,10 +1003,10 @@ TextureImporter:
       Environment_18: 1215492858
       Environment_53: -276140480
       WindPart4: 1329939687
-      WindPart3: -2036469167
       GroundBlock2: 750102396
-      Environment_58: 1275231962
       Spikes1: -1543276114
+      Environment_58: 1275231962
+      WindPart3: -2036469167
       Environment_49: -302586188
   spritePackingTag: 
   pSDRemoveMatte: 0
