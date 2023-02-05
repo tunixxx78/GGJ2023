@@ -11,6 +11,7 @@ TagManager:
   - EndLine
   - Upstream
   - bark
+  - Health
   layers:
   - Default
   - TransparentFX

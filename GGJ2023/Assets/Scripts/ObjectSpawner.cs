@@ -6,7 +6,7 @@ public class ObjectSpawner : MonoBehaviour
 {
     public int numberToSpawn;
     public List<GameObject> spawnPool;
-    public GameObject quad;
+    public GameObject quad, healthObject;
 
     public void SpawnObjects()
     {
@@ -28,7 +28,25 @@ public class ObjectSpawner : MonoBehaviour
             pos = new Vector2(screenX, screenY);
 
             var objInstance = Instantiate(toSpawn, pos, toSpawn.transform.rotation);
-            Destroy(objInstance, 2f);
+            Destroy(objInstance, 3f);
         }
+    }
+
+    public void SpawnHealthObject()
+    {
+        Debug.Log("HEALTH ITEMIÄ PITÄISI TULLA!");
+
+        MeshCollider c = quad.GetComponent<MeshCollider>();
+
+        float screenX, screenY;
+        Vector2 pos;
+
+        screenX = Random.Range(c.bounds.min.x, c.bounds.max.x);
+        screenY = Random.Range(c.bounds.min.y, c.bounds.max.y);
+        pos = new Vector2(screenX, screenY);
+
+        var objInstance = Instantiate(healthObject, pos, Quaternion.identity);
+        Destroy(objInstance, 4f);
+        
     }
 }
